@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">YandexFirstChallenge</string>
+    <string name="do_test_squads">Сделайте несколько тестовых приседаний</string>
+    <string name="start">Начать</string>
+    <string name="time_to_start_squat">Время до начала тестовых приседаний</string>
+    <string name="start_test_squats">Начинайте тестовые приседания</string>
+    <string name="start_training">Начинайте тренировку</string>
+    <string name="continue_squats">Продолжай приседать, слабак!</string>
+    <string name="stop">Стоп</string>
+    <string name="put_phone_in_pocket">Положите телефон в карман, скоро надо будет сделать несколько тестовых приседаний</string>
+    <string-array name="motivation">
+        <item>Продолжай приседать, слабак!</item>
+        <item>Приседания - твои лучшие друзья</item>
+        <item>Жир сам не пропадет!</item>
+        <item>Cпортом попу не испортишь</item>
+    </string-array>
+</resources>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimaryDark"
+            android:theme="@style/ToolbarTheme"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <Button
+        android:id="@+id/startBTN"
+
+        android:layout_width="200dp"
+        android:layout_height="160dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:background="@drawable/button_rounded"
+        android:gravity="center"
+        android:text="@string/start"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:id="@+id/timerLL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:text="@string/put_phone_in_pocket"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/timerTV"
+            android:layout_width="200dp"
+            android:layout_height="160dp"
+            android:textAlignment="center"
+            android:textSize="50sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/testSquadsLL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="160dp"
+            android:text="@string/do_test_squads"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:id="@+id/progressRL"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/progress_stroke">
+
+            <RelativeLayout
+                android:id="@+id/progressBarRL"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/colorPrimaryDark">
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/trainingLL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/squatCountTV"
+            android:layout_width="200dp"
+            android:layout_height="160dp"
+            android:textAlignment="center"
+            android:textSize="50sp" />
+
+        <Button
+            android:id="@+id/stopTrainingBTN"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button_rounded"
+            android:gravity="center"
+            android:text="@string/stop"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
